@@ -27,7 +27,7 @@ class CoinsScreen extends Component{
                     loading?
                     <ActivityIndicator 
                         style={styles.loader}
-                        color="#fff" 
+                        color="#000000" 
                         size="large" />
                     :null
                 }

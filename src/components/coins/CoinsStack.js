@@ -4,6 +4,8 @@ import CoinsScreen from './CoinsScreen'
 import CoinDetailScreen from './CoinDetailScreen'
 import Colors from '../../res/colors'
 
+import Login from '../Login'
+
 const Stack = createStackNavigator();
 
 const CoinsStack = () =>{
@@ -17,6 +19,7 @@ const CoinsStack = () =>{
                 headerTintColor:Colors.white
             }}
         >
+            <Stack.Screen name="Login" component={Login} /> 
             <Stack.Screen name="Coins" component={CoinsScreen} /> 
             <Stack.Screen name="CoinDetail" component={CoinDetailScreen} /> 
         </Stack.Navigator>
