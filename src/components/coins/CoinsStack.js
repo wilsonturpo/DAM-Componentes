@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import CoinsScreen from './CoinsScreen'
-import CoinDetailScreen from './CoinDetailScreen'
+import CoinDetailScreen from '../coinDetail/CoinDetailScreen'
 import Colors from '../../res/colors'
 
 import Login from '../Login'
@@ -19,7 +19,6 @@ const CoinsStack = () =>{
                 headerTintColor:Colors.white
             }}
         >
-            <Stack.Screen name="Login" component={Login} /> 
             <Stack.Screen name="Coins" component={CoinsScreen} /> 
             <Stack.Screen name="CoinDetail" component={CoinDetailScreen} /> 
         </Stack.Navigator>
@@ -27,3 +26,7 @@ const CoinsStack = () =>{
 }
 
 export default CoinsStack
+
+/*
+<Stack.Screen name="Login" component={Login} /> 
+*/
